@@ -4,8 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Interview.OS</title>
-<link rel="icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico?v=1" sizes="any" />
+  <link rel="icon" type="image/png" href="/favicon-32x32.png?v=1" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=1" />
 
   <meta name="description" content="Interview.OS is a structured AI operating system for executive interview judgment, role-fit assessment, and signal calibration." />
 
@@ -14,6 +17,7 @@
       --text-primary: #111;
       --text-secondary: #444;
       --text-muted: #666;
+      --rule: #e6e6e6;
     }
 
     html, body {
@@ -25,28 +29,34 @@
                    Roboto, Helvetica, Arial, sans-serif;
     }
 
-.container {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 72px 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 72px 24px;
+      text-align: left;
+    }
 
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex: 0 0 auto;
+    }
 
     h1 {
       font-size: 28px;
       font-weight: 600;
       letter-spacing: -0.2px;
-      margin: 0 0 20px 0;
-    }
-
-    .tagline {
-      font-size: 18px;
-      line-height: 1.5;
-      margin-bottom: 32px;
+      margin: 0;
+      line-height: 1.1;
     }
 
     p {
@@ -57,13 +67,19 @@
     }
 
     .status {
-      margin-top: 28px;
-      font-weight: 500;
+      margin-top: 18px;
+      font-weight: 600;
       color: var(--text-primary);
     }
 
+    hr {
+      border: 0;
+      border-top: 1px solid var(--rule);
+      margin: 26px 0;
+    }
+
     .link {
-      margin-top: 20px;
+      margin-top: 14px;
       display: inline-block;
       font-size: 15px;
       text-decoration: none;
@@ -76,63 +92,50 @@
       opacity: 0.7;
     }
 
+    .note {
+      margin-top: 8px;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
     footer {
-      margin-top: 80px;
+      margin-top: 72px;
       font-size: 13px;
       color: var(--text-muted);
     }
-    hr {
-  border: 0;
-  border-top: 1px solid #e6e6e6;
-  margin: 28px 0;
-}
-.note {
-  color: #666;
-  font-size: 13px;
-}
-
-    .logo {
-  width: 72px;
-  height: 72px;
-  margin-bottom: 16px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
   </style>
 </head>
 
 <body>
- <img src="logo1.png" alt="Interview.OS logo" class="logo" />
-
   <main class="container">
-<h1>Interview.OS</h1>
+    <div class="brand">
+      <img src="/logo1.png" alt="Interview.OS logo" class="logo" />
+      <h1>Interview.OS</h1>
+    </div>
 
-<p>
-  Interview.OS is designed to help senior leaders evaluate opportunities more clearly—before,
-  during, and after interviews—by surfacing risk, alignment, and decision signals that are often
-  missed or misinterpreted. The broader platform is under controlled development and evaluation.
-</p>
+    <p>
+      Interview.OS is designed to help senior leaders evaluate opportunities more clearly—before,
+      during, and after interviews—by surfacing risk, alignment, and decision signals that are often
+      missed or misinterpreted. The broader platform is under controlled development and evaluation.
+    </p>
 
-<div class="status">Platform beta testing is by invitation only.</div>
+    <div class="status">Platform beta testing is by invitation only.</div>
 
-<hr />
+    <hr />
 
-<p>
-  A public-use GPT is a limited, early-access interface into Interview.OS. It exposes a small subset
-  of the platform’s approach and is intended for exploration and feedback.
-</p>
+    <p>
+      A public-use GPT is a limited, early-access interface into Interview.OS. It exposes a small subset
+      of the platform’s approach and is intended for exploration and feedback.
+    </p>
 
-<a class="link" href="https://chatgpt.com/g/g-6950734e60408191999e820c1e38bec1-interview-os-the-interview-judgment-system" target="_blank" rel="noopener">
-  Access the Interview.OS GPT (beta)
-</a>
-<div class="note">(ChatGPT Plus required)</div>
+    <a class="link"
+       href="https://chatgpt.com/g/g-6950734e60408191999e820c1e38bec1-interview-os-the-interview-judgment-system"
+       target="_blank" rel="noopener">
+      Access the Interview.OS GPT (beta)
+    </a>
+    <div class="note">(ChatGPT Plus required)</div>
 
-<footer>© Interview.OS</footer>
-
-
-    
+    <footer>© Interview.OS</footer>
   </main>
 </body>
 </html>
-
