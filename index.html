@@ -2,21 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Interview.OS</title>
+
+  <meta name="description" content="Interview.OS is a structured AI operating system for executive interview judgment, role-fit assessment, and signal calibration." />
+
   <style>
-    html,body{height:100%;margin:0}
-    body{display:flex;align-items:center;justify-content:center;background:#fff;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
-    .wrap{text-align:center;padding:24px}
-    .logo{max-width:320px;width:70vw;height:auto;display:block;margin:0 auto 14px}
-    .sub{color:#444;font-size:14px;letter-spacing:.2px}
+    :root {
+      --text-primary: #111;
+      --text-secondary: #444;
+      --text-muted: #666;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #fff;
+      color: var(--text-primary);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 72px 24px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+      margin: 0 0 20px 0;
+    }
+
+    .tagline {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 32px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--text-secondary);
+      margin: 0 0 16px 0;
+    }
+
+    .status {
+      margin-top: 28px;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .link {
+      margin-top: 20px;
+      display: inline-block;
+      font-size: 15px;
+      text-decoration: none;
+      color: var(--text-primary);
+      border-bottom: 1px solid var(--text-primary);
+      padding-bottom: 2px;
+    }
+
+    .link:hover {
+      opacity: 0.7;
+    }
+
+    footer {
+      margin-top: 80px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
   </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <!-- Optional: upload logo as logo.svg or logo.png and uncomment the next line -->
-    <!-- <img class="logo" src="logo.svg" alt="Interview.OS" /> -->
-    <div class="sub">Private beta. Invite only.</div>
-  </div>
+  <main class="container">
+    <h1>Interview.OS</h1>
+
+    <div class="tagline">
+      A structured AI operating system for executive interview judgment,
+      role-fit assessment, and signal calibration.
+    </div>
+
+    <p>
+      Interview.OS is designed to help senior leaders evaluate opportunities
+      more clearly—before, during, and after interviews—by surfacing risk,
+      alignment, and decision signals that are often missed or misinterpreted.
+    </p>
+
+    <p>
+      The public GPT is a limited, early-access interface into Interview.OS.
+      It exposes a small subset of the system’s thinking and evaluation approach,
+      intended for exploration and feedback rather than full capability
+      representation. The broader platform is under controlled development
+      and evaluation.
+    </p>
+
+    <div class="status">Private beta. Invite only.</div>
+
+    <a class="link" href="https://chatgpt.com/g/g-6950734e60408191999e820c1e38bec1-interview-os-the-interview-judgment-system" target="_blank" rel="noopener">
+      Access the Interview.OS GPT - requires ChatGPT Plus membership
+    </a>
+
+    <footer>
+      © Interview.OS
+    </footer>
+  </main>
 </body>
 </html>
+
